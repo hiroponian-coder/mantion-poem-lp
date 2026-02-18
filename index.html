@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CELESTIAL TOWER | 天空、という名の聖域。</title>
+    <meta name="description" content="都心の頂に住まう。地上200mの静寂、圧倒的な眺望。THE CELESTIAL TOWER 誕生。">
+    
+    <!-- Google Fonts: 栞のような繊細な明朝体と洗練されたサンセリフ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400;700&family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Noto Serif JP"', 'serif'],
+                        sans: ['Montserrat', '"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        gold: {
+                            light: '#D4AF37',
+                            DEFAULT: '#AF8F2C',
+                            dark: '#8C7023',
+                        },
+                        noble: {
+                            black: '#0A0A0A',
+                            dark: '#1A1A1A',
+                            gray: '#2D2D2D',
+                        }
+                    },
+                    letterSpacing: {
+                        super: '0.25em',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { background-color: #0A0A0A; color: #E5E5E5; }
+        .poem-vertical {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+        .text-gradient-gold {
+            background: linear-gradient(to right, #D4AF37, #FBF5B7, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .overlay-dark {
+            background: linear-gradient(to bottom, rgba(10,10,10,0.4), rgba(10,10,10,0.8));
+        }
+    </style>
+</head>
+<body class="font-serif">
+
+    <!-- Loading Screen (Optional for luxury feel) -->
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 border-b border-white/10 bg-noble-black/80 backdrop-blur-md">
+        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="font-sans text-xl tracking-super font-light">THE CELESTIAL TOWER</span>
+                <span class="text-[10px] tracking-widest text-gold opacity-80 uppercase">The Pinnacle of Urban Living</span>
+            </div>
+            <div class="hidden lg:flex gap-10 text-xs tracking-widest font-sans uppercase">
+                <a href="#concept" class="hover:text-gold transition-colors">Concept</a>
+                <a href="#view" class="hover:text-gold transition-colors">View</a>
+                <a href="#design" class="hover:text-gold transition-colors">Design</a>
+                <a href="#location" class="hover:text-gold transition-colors">Location</a>
+                <a href="#contact" class="bg-gold hover:bg-gold-light text-noble-black px-6 py-2 transition-all font-bold">Entry</a>
+            </div>
+            <button class="lg:hidden text-2xl"><i class="fa-solid fa-bars-staggered"></i></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?auto=format&fit=crop&q=80&w=2000" alt="Luxury Tower View" class="w-full h-full object-cover scale-110 animate-[zoom_20s_infinite_alternate]">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="absolute inset-0 overlay-dark"></div>
+        </div>
+        
+        <div class="relative z-10 text-center space-y-12">
+            <div class="flex justify-center gap-8 mb-20" data-aos="fade-up" data-aos-duration="2000">
+                <div class="poem-vertical h-64 text-2xl md:text-3xl tracking-[0.5em] leading-loose font-light">
+                    天空、という名の聖域。
+                </div>
+                <div class="poem-vertical h-80 mt-12 text-2xl md:text-3xl tracking-[0.5em] leading-loose font-light">
+                    静寂が、都心の鼓動を凌駕する。
+                </div>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+                <h1 class="font-sans text-4xl md:text-7xl font-thin tracking-super mb-4">THE CELESTIAL TOWER</h1>
+                <p class="text-gold tracking-[0.3em] text-sm md:text-base">地上200メートル、全182邸の叙事詩。</p>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-60">
+            <span class="text-[10px] tracking-super uppercase font-sans">Scroll Down</span>
+            <div class="w-px h-20 bg-gradient-to-b from-white to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section id="concept" class="py-32 bg-noble-black relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-20">
+                <div class="lg:w-1/2" data-aos="fade-right">
+                    <div class="relative inline-block mb-12">
+                        <h2 class="text-gold text-gradient-gold text-4xl md:text-5xl font-light leading-tight">
+                            都心の重力を、<br>脱ぎ捨てる。
+                        </h2>
+                    </div>
+                    <div class="space-y-8 text-noble-gray-100 leading-loose tracking-widest text-sm md:text-base">
+                        <p>
+                            喧騒を眼下に、雲の上で憩う。それは特権ではなく、あるべき姿への回帰。<br>
+                            「THE CELESTIAL TOWER」が提示するのは、<br>
+                            住まいという概念を超えた、精神の解放区です。
+                        </p>
+                        <p>
+                            石、水、そして光。<br>
+                            厳選されたマテリアルが織りなす空間は、<br>
+                            住まう人の美意識と共鳴し、新たな物語を紡ぎ始めます。
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200" alt="Building Architecture" class="rounded-sm shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000">
+                    <div class="absolute -bottom-10 -left-10 bg-noble-dark p-12 border border-white/5 hidden md:block">
+                        <p class="poem-vertical h-48 text-xl tracking-[0.4em] leading-relaxed">
+                            その美学は、<br>時代を置き去りにする。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- View Section -->
+    <section id="view" class="relative h-[80vh] flex items-center justify-center">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1533154683836-84ea7a0bc310?auto=format&fit=crop&q=80&w=2000" alt="Night View" class="w-full h-full object-cover fixed top-0 left-0 -z-10">
+            <div class="absolute inset-0 bg-black/60"></div>
+        </div>
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <h3 class="text-3xl md:text-6xl tracking-super font-thin mb-8" data-aos="fade-up">A PANORAMA OF ETERNITY</h3>
+            <p class="text-xl md:text-2xl tracking-[0.4em] font-light italic" data-aos="fade-up" data-aos-delay="300">
+                夜景は、あなただけのプライベート・ギャラリーになる。
+            </p>
+        </div>
+    </section>
+
+    <!-- Design / Room -->
+    <section id="design" class="py-32 bg-white text-noble-black">
+        <div class="container mx-auto px-6 text-center mb-24" data-aos="fade-up">
+            <span class="font-sans text-gold text-xs tracking-super uppercase mb-4 block">Private Residence</span>
+            <h2 class="text-3xl md:text-5xl font-light tracking-widest">究極という、スタンダード。</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-4 container mx-auto px-6">
+            <div class="group relative overflow-hidden" data-aos="fade-up">
+                <img src="https://images.unsplash.com/photo-1512918766674-ed62b9062a35?auto=format&fit=crop&q=80&w=1000" alt="Living Room" class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                <div class="absolute bottom-10 left-10 text-white">
+                    <span class="block text-xs font-sans tracking-super mb-2">Living Space</span>
+                    <h4 class="text-2xl tracking-widest">光と影のタペストリー</h4>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&q=80&w=1000" alt="Kitchen" class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-105">
+                <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all"></div>
+                <div class="absolute bottom-10 left-10 text-white">
+                    <span class="block text-xs font-sans tracking-super mb-2">Kitchen & Dining</span>
+                    <h4 class="text-2xl tracking-widest">美食という、儀式。</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="py-32 bg-noble-dark">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2 space-y-12" data-aos="fade-right">
+                    <div>
+                        <span class="font-sans text-gold text-xs tracking-super uppercase mb-4 block">The Prime Location</span>
+                        <h2 class="text-4xl md:text-5xl font-light tracking-widest leading-tight">
+                            世界の中心で、<br>静寂を手に入れる。
+                        </h2>
+                    </div>
+                    <p class="leading-loose tracking-widest text-noble-gray-400">
+                        「代官山」徒歩5分。都心の主要エリアを意のままに操る機動力と、<br>
+                        歴史ある高台の邸宅街がもたらす深い安らぎ。<br>
+                        動と静、二つの旋律が、ここで美しく調和します。
+                    </p>
+                    <div class="grid grid-cols-2 gap-8 font-sans text-xs tracking-widest uppercase">
+                        <div class="border-l border-gold pl-4">
+                            <p class="text-gold mb-1">Daikanyama St.</p>
+                            <p>5 min walk</p>
+                        </div>
+                        <div class="border-l border-gold pl-4">
+                            <p class="text-gold mb-1">Shibuya St.</p>
+                            <p>12 min walk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 w-full h-[500px] bg-noble-black border border-white/10 relative overflow-hidden" data-aos="fade-left">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.970188610547!2d139.7008775!3d35.6555198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b4566f14a4b%3A0xc6222f7b8849b380!2z5Luj5a6Y5bGx6aeF!5e0!3m2!1sja!2sjp!4v1680000000000!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="absolute inset-0 pointer-events-none border-[20px] border-noble-dark"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="py-40 bg-white text-noble-black text-center relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none">
+            <h2 class="text-[20vw] font-sans font-black whitespace-nowrap">THE CELESTIAL</h2>
+        </div>
+        <div class="container mx-auto px-6 relative z-10" data-aos="zoom-in">
+            <h3 class="text-3xl md:text-5xl font-light tracking-super mb-12 italic">扉は、今、開かれた。</h3>
+            <p class="mb-16 tracking-widest leading-loose">
+                「THE CELESTIAL TOWER」への第一歩を。<br>
+                資料請求・モデルルーム見学のご予約を承ります。
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-8">
+                <a href="#" class="px-12 py-5 border border-noble-black hover:bg-noble-black hover:text-white transition-all tracking-[0.3em] font-sans uppercase text-sm">Request Catalog</a>
+                <a href="#" class="px-12 py-5 bg-gold text-white hover:bg-gold-dark transition-all tracking-[0.3em] font-sans uppercase text-sm shadow-xl">Reservation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-noble-black border-t border-white/5">
+        <div class="container mx-auto px-6 text-center space-y-12">
+            <div class="font-sans tracking-super text-xl">THE CELESTIAL TOWER</div>
+            <div class="flex justify-center gap-8 text-[10px] tracking-widest uppercase opacity-50">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Company Profile</a>
+                <a href="#">Site Map</a>
+            </div>
+            <div class="text-[10px] tracking-widest opacity-30 leading-loose">
+                &copy; 2026 ESTATE GENESIS Co., Ltd. All Rights Reserved.<br>
+                ※掲載の写真はイメージであり、実際とは異なる場合があります。
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+    </script>
+</body>
+</html>
